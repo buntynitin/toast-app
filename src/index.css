@@ -1,0 +1,24 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #f1f1f1;
+}
+*{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  color: #4a5662;
+  font-family: "Graphik", sans-serif;
+}

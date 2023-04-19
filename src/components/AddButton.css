@@ -1,0 +1,53 @@
+.add_button_add {
+    border: none;
+    border-radius: 0.625rem;
+    box-shadow: -0.3125rem 0.3125rem 0.625rem 0 rgba(221, 221, 224, 0.2), 0.3125rem -0.3125rem 0.625rem 0 rgba(221, 221, 224, 0.2), -0.3125rem -0.3125rem 0.625rem 0 rgba(255, 255, 255, 0.9), 0.3125rem 0.3125rem 0.8125rem 0 rgba(220, 220, 220, 0.9);
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    background: #f0f0f3;
+    width: 72px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+button {
+    cursor: pointer;
+    line-height: 1rem;
+    font-weight: 500;
+}
+.add_button_plus, .add_button_minus {
+    font-size: 1rem;
+    border-radius: 50%;
+    box-shadow: inset -0.125rem 0.125rem 0.25rem 0 rgba(221, 221, 224, 0.2), inset 0.125rem -0.125rem 0.25rem 0 rgba(221, 221, 224, 0.2), inset -0.125rem -0.125rem 0.25rem 0 rgba(255, 255, 255, 0.9), inset 0.125rem 0.125rem 0.3125rem 0 rgba(220, 220, 220, 0.9);
+    color: #3cbcb4;
+    background-color: #f1f1f1;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    margin-left: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.add_button_plus:before, .add_button_minus:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: url('../static/minus.svg') no-repeat center center;
+    background-size: contain;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add_button_plus:before{
+    height: 10px;
+    background: url('../static/add.svg') no-repeat center center;
+    background-size: contain;
+}
